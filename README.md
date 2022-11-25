@@ -1,3 +1,5 @@
+# 如果你感到严重的身体不适，请及时寻求医疗帮助。
+
 # health-code-simulator
 
 常见问题：[FAQ.md](https://codeberg.org/ilovexjp/health-code-simulator/src/branch/main/docs/FAQ.md)
