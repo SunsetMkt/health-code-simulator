@@ -1,0 +1,16 @@
+{
+  "short_name": "苏州数字门牌",
+  "name": "苏州数字门牌",
+  "icons": [
+    {
+      "src": "jszwfw.png",
+      "type": "image/png",
+      "sizes": "492x492"
+    }
+  ],
+  "id": "ilovexjp-szszmp-simulator",
+  "start_url": ".",
+  "display": "standalone",
+  "scope": "/",
+  "description": "苏州数字门牌模拟"
+}

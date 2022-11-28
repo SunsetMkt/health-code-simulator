@@ -30,6 +30,7 @@ const apps = {
     menu: [
       { title: "场所", icon: "place", link: "skm/index.html#checkin" },
       { title: "核酸", icon: "vaccines", link: "skm/detail.html" },
+      { title: "苏州数字门牌", icon: "place", link: "suzhou-shuzi-menpai/index.html" },
     ],
   },
   "jkb": {
