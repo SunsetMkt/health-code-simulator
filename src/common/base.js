@@ -1,4 +1,16 @@
-const root_path = "";
+function getScriptPath() {
+  var scripts = document.getElementsByTagName('script');
+  var path = scripts[scripts.length - 1].src.split('?')[0]; // remove any ?query
+  var mydir = path.split('/').slice(0, -1).join('/') + '/'; // remove last filename part of path
+  return mydir;
+}
+// https://stackoverflow.com/questions/2255689/how-to-get-the-file-path-of-the-currently-executing-javascript-code
+
+function getParentDir(path) {
+  return path.split("/").slice(0, -1).join("/");
+}
+
+const root_path = getParentDir(getScriptPath());
 const time_update_list = [];
 let time_updater_init = false;
 
