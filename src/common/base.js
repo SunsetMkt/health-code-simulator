@@ -1,16 +1,16 @@
-function getScriptPath() {
+function getRootPath() {
+  // https://stackoverflow.com/questions/2255689/how-to-get-the-file-path-of-the-currently-executing-javascript-code
   var scripts = document.getElementsByTagName('script');
   var path = scripts[scripts.length - 1].src.split('?')[0]; // remove any ?query
   var mydir = path.split('/').slice(0, -1).join('/') + '/'; // remove last filename part of path
-  return mydir;
+  var parent = mydir.split('/').slice(0, -2).join('/') + '/';
+  var rootdir = parent.replace(/^(https?:)?\/\/[^\/]+/, ''); // remove protocol and domain, leaving only the path
+  rootdir = rootdir.replace(/^\//, ''); // remove beginning slash if present
+  console.log('root_path ' + rootdir);
+  return rootdir;
 }
-// https://stackoverflow.com/questions/2255689/how-to-get-the-file-path-of-the-currently-executing-javascript-code
 
-function getParentDir(path) {
-  return path.split("/").slice(0, -1).join("/");
-}
-
-const root_path = getParentDir(getScriptPath());
+const root_path = getRootPath();
 const time_update_list = [];
 let time_updater_init = false;
 
