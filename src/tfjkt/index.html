@@ -3,7 +3,8 @@
 <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 <meta name="viewport" content="width=device-width,height=device-height,viewport-fit=cover,initial-scale=1,maximum-scale=1,user-scalable=0">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> -->
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" type="image/png" href="./static/message-icon.png">
 <link rel="apple-touch-icon" href="./static/message-icon.png">
@@ -184,11 +185,11 @@
                   <text class=" type-gsd-h5-react:Text" id="tap-to-update" style="font-size: 3.2vw; font-weight: 600; font-family: 'PingFang SC'; font-style: normal; color: #00A870; opacity: 1;">点击更新</text>
                 </view>
               </view>
-              <view class=" type-gsd-h5-react:Container" id="uuid_2c64ac93" style="height: 20vw; margin-left: 1.333vw; padding: 1.6vw; border-radius: 1.067vw; position: relative; flex: 1; box-sizing: border-box; background-color: #00a870;">
+              <view class=" type-gsd-h5-react:Container" id="uuid_2c64ac93" style="height: 20vw; margin-left: 1.333vw; padding: 1.6vw; border-radius: 1.067vw; position: relative; flex: 1; box-sizing: border-box; background-color: #bfbfbf;">
                 <text class=" type-gsd-h5-react:Text" id="uuid_60c3fd94" style="font-size: 3.467vw; font-weight: 600; font-family: 'PingFang SC'; font-style: normal; color: white;" text="风险城市旅居史">风险城市旅居史</text>
-                <text class=" type-gsd-h5-react:Text" id="trace-update-datetime" selectable="false" style="display: block; font-size: 2.667vw; font-weight: 400; font-family: 'PingFang SC'; font-style: normal; color: white;"></text>
-                <text class=" type-gsd-h5-react:Text" id="uuid_e0782f94" selectable="false" style="color: rgb(0, 0, 0); font-size: 8.533vw; font-weight: 600; opacity: 0.2; position: absolute; right: 2.933vw; top: 5.333vw; font-family: 'PingFang SC'; font-style: normal;">无</text>
-                <view class=" type-gsd-h5-react:Container" id="uuid_5a175794" style="width: 29.467vw; height: 29.467vw; opacity: 0.1; border-radius: 50%; background: rgb(255, 255, 255); position: absolute; right: -12vw; top: 0vw;"></view>
+                <text class=" type-gsd-h5-react:Text" id="trace-update-datetime" selectable="false" style="display: block; font-size: 2.667vw; font-weight: 400; font-family: 'PingFang SC'; font-style: normal; color: white;">待核验</text>
+                <!-- <text class=" type-gsd-h5-react:Text" id="uuid_e0782f94" selectable="false" style="color: rgb(0, 0, 0); font-size: 8.533vw; font-weight: 600; opacity: 0.2; position: absolute; right: 2.933vw; top: 5.333vw; font-family: 'PingFang SC'; font-style: normal;"></text> -->
+                <!-- <view class=" type-gsd-h5-react:Container" id="uuid_5a175794" style="width: 29.467vw; height: 29.467vw; opacity: 0.1; border-radius: 50%; background: rgb(255, 255, 255); position: absolute; right: -12vw; top: 0vw;"></view> -->
               </view>
             </view>
           </view>
@@ -267,7 +268,7 @@
   document.getElementById("id61").style.backgroundImage = `url(./static/bg${Math.floor(Math.random() * 12) + 1}.png)`;
 
   setStaticTime("#covid-test-datetime", 5, 13, 6, 5, (x) => x.replace("-", "/") + "时");
-  setStaticTime("#trace-update-datetime", 5, 13, 2, 1, (x) => x.replace("-", "/") + "时");
+  // setStaticTime("#trace-update-datetime", 5, 13, 2, 1, (x) => x.replace("-", "/") + "时");
 
   setDynamicTime("#_date", 0, 10);
   setDynamicTime("#_min", 11, 17);
