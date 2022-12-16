@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Din";
+  src: url("./static/DIN-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Din";
+  src: url("./static/DIN-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Din";
+  src: url("./static/DIN-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Din";
+  src: url("./static/DIN-Light.ttf") format("truetype");
+  font-weight: 300;
+}
 view {
   display: block;
   box-sizing: border-box;
@@ -5,7 +25,8 @@ view {
 
 body {
   box-sizing: border-box;
-  font-family: PingFangSC-Regular;
+  /* font-family: PingFangSC-Regular;  */
+  font-family: Din, sans-serif;
   font-size: 3.733vw;
   margin: 0
 }
@@ -191,7 +212,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0.267vw 0;
-  white-space: nowrap
+  white-space: nowrap;
+  line-height: 4vh;
+  margin-top: 2vh;
 }
 
 .Time--time--ovzGkhG .Time--timeDate--MVxzVvv {
